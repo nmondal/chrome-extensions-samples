@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <title>Share on Twitter: Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 10px auto 40px auto;
+            font-family: "Open Sans", sans-serif !important;
+            font-size: 19px;
+            max-width: 800px;
+            padding: 10px 20px 20px 20px;
+            line-height: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: crimson;
+        }
+        
+        a:visited {
+            color: crimson;
+        }
+        
+        h1 {
+            color: crimson;
+        }
+        .mainpic {
+            border-top: 0;
+            border-right: 0;
+            background-image: none;
+            border-bottom: 0;
+            float: none;
+            padding-top: 0;
+            padding-left: 0;
+            margin: 0 auto;
+            border-left: 0;
+            display: block;
+            padding-right: 0
+        }
+        
+        #status {color: crimson;}
+        td {padding: 1em;}
+        select {font-size: 16px;}
+        button {
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        button:focus {outline:0;}
+    </style>
+</head>
+
+<body>
+    <h1>Screenshot Extension: Options</h1>
+    <p>&nbsp;</p>
+    <table>
+        <tr class="first">
+            <td>
+                <label for="url">URL to Send Data:</label><input type="text" id="url" name="furl" value="http://localhost:9090/push"/>
+            </td>
+            <td>Screenshot File Format</td>
+            <td>
+                <select id="format">
+                    <option value="png">PNG (Default)</option>
+                    <option value="jpeg">JPEG</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Screenshot Action</td>
+            <td>
+                <select id="action">
+                    <option value="save">Save (Default)</option>
+                    <option value="show">Show in a tab</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <button id="save">Save Settings</button>
+    </div>
+    <p>&nbsp; <span id="status"></span></p>
+    <hr/>
+    <p>Tip: Use Keyboard Command <strong>Alt + P</strong></p>
+    <!--
+    <p>Like this extension? <a href="https://chrome.google.com/webstore/detail/screenshot/mafopchedjkbgkpbbnbgifaolempmdgh/reviews" target="_blank">Rate it 5-stars</a> on Chrome Web Store.</p>
+    <p>Extension by <a href="https://browsernative.com/screenshot-extension/" target="_blank" title="Have feedback? Visit our home page.">BrowserNative</a></p>
+    -->
+    
+    <script src="options.js"></script>
+</body>
+
+</html>

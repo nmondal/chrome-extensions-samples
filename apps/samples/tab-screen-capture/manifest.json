@@ -1,0 +1,33 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/128.png",
+      "default_title": "Take Screenshot"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+P"
+         }
+      }
+   },
+   "description": "Take screenshot of current tab with Notes. Keyboard Command: Alt+P.",
+   "homepage_url": "https://nmondal.github.io",
+   "icons": {
+      "128": "assets/128.png",
+      "48": "assets/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuOvWhv4RreQWihqxTeOThlcdS+EjPixc5s+NYsGHNUCHyndJqMSC/pkasU4s4EjOZJe9FrN4fow7on6YY9ucZRCpGkrUSuQ1gGHE6XkhGKzYXuQKtBIKT/xgI7BiIu+nl941UoPiRw3r/UEKxdVkx66RIG72RgYSp6HtJhVqTXdY3ehBEaEXj4uPOSAPyLKB01XEUP26XUa33Lst6KtjNQJDOMqjHcjUFrCjvMRZpa3APc8qYFcBAmkpAz79o12fsFPqFs8mHPqcwA64jmY/QrUtVhL0SEbbS0+iWsJvM8kUasl1aPg8pSU8u4j63zEbkRDb1NpQsmMTWPpAmC2mLQIDAQAB",
+   "manifest_version": 2,
+   "name": "Screenshot",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "activeTab", "downloads" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.5"
+}
